@@ -4,6 +4,7 @@ services:
   kali:
     container_name: kali_container
     image: kalilinux/kali-rolling:latest
+    pull_policy: build
     build: .
     tty: true
     stdin_open: true
