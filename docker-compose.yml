@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  kali:
+    container_name: kali_container
+    image: kalilinux/kali-rolling:latest
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./shared:/shared
